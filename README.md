@@ -52,14 +52,37 @@ The project is based on the final assignment from the DataCamp *SQL for Business
 
 ## SQL Analysis
 
-### Step 1: Flagging Out-of-Control Products  
-Using SQL, each product's `height` was compared against its rolling control limits calculated over a window of 5 rows (partitioned by operator). Alerts were flagged when heights fell outside the calculated limits.
+#### 1. SQL query for detecting part measurements anomalies.
+- SQL query calculates the upper control limit (UCL) and lower control limit (LCL) based on the average height and standard deviation of the last 5 heights for each operator.
 
-### Step 2: Aggregating Alerts per Operator  
-A summary table was created to count how many alerts each operator triggered. This was used to evaluate which machines consistently failed to produce within the control range.
+```sql
+-- Flag whether the height of a part is within the control limits 
+SELECT
+	b.*,
+	CASE 
+		WHEN b.height NOT BETWEEN b.lcl AND b.ucl THEN TRUE
+		ELSE FALSE 
+	END AS alert
+FROM
+...
+```
+👉 [See full query](analysis/team_possession_leaders.sql)
 
-### Step 3: Alert Rate Analysis  
-To normalize for different operator workloads, alert rates (`alerts_count / total_alerts`) were calculated and compared to the average. Operators above this average were flagged as potential concerns.
+#### 2. SQL query for identifying operators who produce a higher-than-average number of out-of-control parts.  
+- SQL query is designed to identify and analyze height alerts for manufactured parts based on statistical control limits (UCL, LCL).
+
+```sql
+WITH alerts AS (
+	SELECT
+	b.*,
+	CASE WHEN b.height NOT BETWEEN b.lcl AND b.ucl
+		 THEN TRUE
+		 ELSE FALSE
+		 END AS alert
+	FROM
+...
+```
+👉 [See full query](analysis/team_possession_leaders.sql)
 
 ---
 
