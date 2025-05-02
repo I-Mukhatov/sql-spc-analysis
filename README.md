@@ -35,7 +35,7 @@ The project is based on the final assignment from the DataCamp *SQL for Business
 
 ## Dataset Overview
 
-The data is available in the ![`manufacturing_parts`](datasets/manufacturing_parts.csv) table which has the following fields and data types: 
+The data is available in the [manufacturing_parts](datasets/manufacturing_parts.csv) table which has the following fields and data types: 
 
     - `item_no`: the item number, BIGINT
     - `length`: the length of the item made, DOUBLE PRECISION 
