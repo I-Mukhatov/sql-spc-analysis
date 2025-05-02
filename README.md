@@ -1,6 +1,6 @@
 # Evaluating a Manufacturing Process using SQL & Python
 
-![Visual Summary](images/sql_spc_summary_01.png)
+![Visual Summary](images/sql_spc_summary_01.PNG)
 
 ---
 
