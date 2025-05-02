@@ -35,10 +35,13 @@ The project is based on the final assignment from the DataCamp *SQL for Business
 
 ## Dataset Overview
 
-The dataset includes:
-- `item_no`: Item identifier
-- `height`, `length`, `width`: Product measurements
-- `operator`: Machine/operator name
+The data is available in the ![`manufacturing_parts`](datasets/manufacturing_parts.csv) table which has the following fields and data types: 
+
+    - `item_no`: the item number, BIGINT
+    - `length`: the length of the item made, DOUBLE PRECISION 
+    - `width`: the width of the item made, DOUBLE PRECISION
+    - `height`: the height of the item made, DOUBLE PRECISION 
+    - `operator`: the operating machine, TEXT
 
 ---
 
