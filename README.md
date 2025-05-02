@@ -66,7 +66,7 @@ SELECT
 FROM
 ...
 ```
-👉 [See full query](analysis/team_possession_leaders.sql)
+👉 [See full query](analysis/df_alerts.sql)
 
 #### 2. SQL query for identifying operators who produce a higher-than-average number of out-of-control parts.  
 - SQL query is designed to identify and analyze height alerts for manufactured parts based on statistical control limits (UCL, LCL).
@@ -82,7 +82,7 @@ WITH alerts AS (
 	FROM
 ...
 ```
-👉 [See full query](analysis/team_possession_leaders.sql)
+👉 [See full query](analysis/operator_alerts_stats.sql)
 
 ---
 
