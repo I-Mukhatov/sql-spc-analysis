@@ -1,6 +1,10 @@
 # Evaluating a Manufacturing Process using SQL & Python
 
-## 📌 Project Overview
+![Visual Summary](images/sql-spc-summary.png)
+
+---
+
+## Project Overview
 
 This project analyzes a historical dataset from a manufacturing process using SQL and Python to implement **Statistical Process Control (SPC)**. The goal is to monitor product quality and operator performance by identifying parts that fall outside acceptable height tolerances.
 
@@ -51,7 +55,7 @@ To normalize for different operator workloads, alert rates (`alerts_count / tota
 
 ---
 
-## 📈 Visualizations
+## Visualizations
 
 ### Control Chart (Dynamic)
 A moving control chart was plotted for each operator, showing height values over time with rolling UCL/LCL/mean bands and color-coded alerts.
