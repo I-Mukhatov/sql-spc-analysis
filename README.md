@@ -35,13 +35,18 @@ The project is based on the final assignment from the DataCamp *SQL for Business
 
 ## Dataset Overview
 
-The data is available in the [manufacturing_parts](datasets/manufacturing_parts.csv) table which has the following fields and data types: 
+#### Schema name: `PUBLIC`
+#### Table Name: [`manufacturing_parts`](datasets/manufacturing_parts.csv)
 
-    - `item_no`: the item number, BIGINT
-    - `length`: the length of the item made, DOUBLE PRECISION 
-    - `width`: the width of the item made, DOUBLE PRECISION
-    - `height`: the height of the item made, DOUBLE PRECISION 
-    - `operator`: the operating machine, TEXT
+| Column     | Definition              | Data type          |
+|------------|-------------------------|--------------------|
+| `item_no`  | Item number             | `BIGINT`           |
+| `length`   | Length of the item made | `DOUBLE PRECISION` |
+| `width`    | Width of the item made  | `DOUBLE PRECISION` |
+| `height`   | Height of the item made | `DOUBLE PRECISION` |
+| `operator` | Operating machine       | `TEXT`             |
+
+**Data Source:** This project uses fictional manufacturing data provided in DataCamp's Data Sources repository for DataLab projects.
 
 ---
 
