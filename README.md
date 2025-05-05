@@ -93,7 +93,7 @@ WITH alerts AS (
 
 ### Control Chart (Dynamic)
 A moving control chart was plotted for each operator, showing a part height measurements over time with rolling UCL/LCL/mean bands and color-coded alerts. 
-- 📈 [Control Chart](/images/control-chart-dynamic.png) (aka Shewhart Chart) components:
+- 📈 [Control Chart](/images/control-chart-dynamic.PNG) (aka Shewhart Chart) components:
 - X-axis: row_number
 - Y-axis: height
 - Lines: `UCL` (Upper Control Limit), `LCL` (Lower Control Limit), `Mean` (avg_height)
