@@ -12,7 +12,7 @@ The project is based on the final assignment from the DataCamp *SQL for Business
 
 ---
 
-## Objectives
+## Project Objectives
 
 - **Detect anomalies** in product height measurements using dynamic control limits.
 - **Identify operators** who produce a higher-than-average number of out-of-control parts.
